@@ -1,8 +1,12 @@
 package factorial;
 
+import java.util.Scanner;
+
 public class RecursiveMethod {
     public static void main(String[] args) {
-        int num=5;
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Please Enter Number: ");
+        int num=scanner.nextInt();
         System.out.println("Factorial number of given input:"+num+" is:"+factorial(num));
 
     }
