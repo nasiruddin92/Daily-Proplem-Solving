@@ -8,7 +8,7 @@ public class IterativeMethod {
         System.out.print("Please Enter a Number: ");
         int num=scanner.nextInt();
         int factorialNumber=1;
-        if (num==0|| num==1) {
+        if (num!=0|| num!=1) {
             for (int i = 1; i <= num; i++) {
                 factorialNumber = factorialNumber * i;
             }
