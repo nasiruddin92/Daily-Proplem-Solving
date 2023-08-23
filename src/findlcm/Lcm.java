@@ -6,10 +6,7 @@ public class Lcm {
 
     private static int findLcm(int num1, int num2){
         int lcmNumber=Math.max(num1,num2);
-        while (true){
-            if (lcmNumber%num1==0 && lcmNumber%num2==0){
-                break;
-            }
+        while (lcmNumber % num1 != 0 || lcmNumber % num2 != 0) {
             lcmNumber++;
         }
         return lcmNumber;
